@@ -1,0 +1,25 @@
+CREATE TABLE block
+(
+    id                       BIGINT PRIMARY KEY DEFAULT nextval('block_id_seq'),
+    base_fee_per_gas         VARCHAR(255),
+    blob_gas_used            VARCHAR(255),
+    difficulty               VARCHAR(255),
+    excess_blob_gas          VARCHAR(255),
+    extra_data               TEXT,
+    gas_limit                VARCHAR(255),
+    gas_used                 VARCHAR(255),
+    hash                     VARCHAR(512) UNIQUE,
+    logs_bloom               TEXT,
+    miner                    VARCHAR(255),
+    mix_hash                 VARCHAR(512),
+    nonce                    VARCHAR(255),
+    number                   VARCHAR(255),
+    parent_beacon_block_root VARCHAR(255),
+    parent_hash              VARCHAR(512),
+    receipts_root            VARCHAR(255),
+    sha3uncles               VARCHAR(255),
+    size                     VARCHAR(255),
+    state_root               VARCHAR(255),
+    timestamp                VARCHAR(255),
+    total_difficulty         VARCHAR(255)
+);

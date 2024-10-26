@@ -1,0 +1,25 @@
+CREATE TABLE transaction
+(
+    id                       INT DEFAULT nextval('transaction_id_seq') PRIMARY KEY,
+    block_id                 INT NOT NULL,
+    block_hash               TEXT,
+    block_number             TEXT,
+    from_address             TEXT,
+    gas                      TEXT,
+    gas_price                TEXT,
+    max_priority_fee_per_gas TEXT,
+    max_fee_per_gas          TEXT,
+    hash                     TEXT,
+    input                    TEXT,
+    nonce                    TEXT,
+    to_address               TEXT,
+    transaction_index        TEXT,
+    value                    TEXT,
+    type                     TEXT,
+    chain_id                 TEXT,
+    v                        TEXT,
+    y_parity                 TEXT,
+    r                        TEXT,
+    s                        TEXT,
+    CONSTRAINT fk_transaction_block FOREIGN KEY (block_id) REFERENCES block (id)
+);

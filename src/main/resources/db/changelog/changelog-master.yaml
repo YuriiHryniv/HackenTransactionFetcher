@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: yurii
+      changes:
+        - sqlFile:
+            path: db/sequences.sql
+
+  - changeSet:
+      id: 2
+      author: yurii
+      changes:
+        - sqlFile:
+            path: db/block.sql
+
+  - changeSet:
+      id: 3
+      author: yurii
+      changes:
+        - sqlFile:
+            path: db/transaction.sql
+
+  - changeSet:
+      id: 4
+      author: yurii
+      changes:
+        - sqlFile:
+            path: db/withdrawal.sql
+
+  - changeSet:
+      id: 5
+      author: yurii
+      changes:
+        - sqlFile:
+            path: db/system_sett.sql
