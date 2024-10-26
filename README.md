@@ -38,11 +38,11 @@ This project is designed to connect to an Ethereum Virtual Machine (EVM) node an
 ### Query Transactions
 
 - `/api/v1/transactions/search`: Search stored transactions by parameters such as `blockHash`, `fromAddress`, `toAddress`, `hash`, etc.
-  - **Optional**: Use `fullSearch` parameter for full-text search support across fields. (Do not forget to use the script which is not included in liquibase)
+  - **Optional**: Use `fullSearch` parameter for full-text search support across fields. (Do not forget to use the script which is not included in liquibase: src/main/resources/db/optional/transaction_full_text_support.sql)
 
 ### API Documentation
 
-- `/swagger-ui.html`: Access interactive API documentation.
+- `/swagger-ui/index.html`: Access interactive API documentation.
 
 ### Metrics
 
