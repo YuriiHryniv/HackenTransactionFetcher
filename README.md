@@ -5,7 +5,7 @@ This project is designed to connect to an Ethereum Virtual Machine (EVM) node an
 ## Features
 
 1. **Connect to EVM Node**
-   - The service connects to an EVM node (such as Ethereum, Arbitrum, BSC, Optimism, Polygon, zkSync) using public nodes like [Grove](https://portal.grove.city) or [Infura](https://app.infura.io/).
+   - The service connects to an EVM node (such as Ethereum, Arbitrum, BSC, Optimism, Polygon, zkSync) using public node [Grove](https://portal.grove.city)
    - It fetches real-time transactions from the blockchain network.
    
 2. **Store Transactions in PostgreSQL**
