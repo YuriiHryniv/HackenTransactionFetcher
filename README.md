@@ -53,4 +53,6 @@ This project is designed to connect to an Ethereum Virtual Machine (EVM) node an
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/blockchain-transaction-service.git
+
+2. Don't forget to configure application.properties file.
    
